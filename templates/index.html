@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("D:/Mini Projects/TubeChat/assets/indexbg.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            width: 40vw;
+            justify-content: space-between;
+            margin-top: 10vh;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.45);
+            box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(10px);
+            
+        }
+        .nav-item{
+            text-decoration: none;
+            color: #FFF;
+            font-family: "Do Hyeon";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: normal;
+        }
+        /* .nav-item:hover{
+            text-decoration: underline;
+        } */
+        .nav-item-active{
+            text-decoration: underline;
+            color: #FFF;
+            font-family: "Do Hyeon";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        /* .header{
+            border-radius: 498px;
+            background: #000;
+            backdrop-filter: blur(50px);
+        } */
+        .header-text{
+            color: #FFF;
+            font-family: "Do Hyeon";
+            font-size: 108px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 10%;
+            margin-bottom: 2%;
+            text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7);
+        }
+        .line{
+            width: 1080px;
+            flex-shrink: 0;
+            stroke-width: 1px;
+            stroke: #FFF;
+        }
+        .option{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .opt-head-text{
+            color: #BFE4FF;
+            font-family: "Do Hyeon";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 10%;
+            margin-bottom: 2%;
+            text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .opts{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .opt-yt{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20vw;
+            height: 25vh;
+            border-radius: 12px;
+            background: rgba(255, 0, 0, 0.30);
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(8px);
+            margin: 2%;
+        }
+        .icon-yt{
+            height: 100px;
+            width: 120px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../assets/icon-yt.png");
+        }
+        .title-text{
+            color: #FFF;
+            font-family: "Do Hyeon";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .opt-pdf{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20vw;
+            height: 25vh;
+            border-radius: 12px;
+            background: rgba(204, 0, 255, 0.30);
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(8px);
+            margin: 2%
+        }
+        .icon-pdf{
+            height: 100px;
+            width: 120px;
+            margin-top: 10px;
+            margin-bottom : 2px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../assets/icon-pdf.png");
+        }
+        .title-text{
+            color: #FFF;
+            font-family: "Do Hyeon";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: -20px;
+            margin-bottom: -25px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="navbar">
+                <div>
+                    <a href="" class="nav-item-active">Home</a>
+                </div>
+                <div>
+                    <a href="" class="nav-item">About Us</a>
+                </div>
+                <div>
+                    <a href="" class="nav-item">Documentation</a>
+                </div>
+                <div>
+                    <a href="" class="nav-item">Contact Us</a>
+                </div>
+            </div>
+            <div class="header">
+                <p class="header-text">TubeChat</p>
+            </div>
+            <!-- <div class="line"></div> -->
+            <div class="option">
+                <p class="opt-head-text">Choose knowledge type</p>
+                <div class="opts">
+                    <a href="/youtube" class="opt-yt" >
+                        <div class="icon-yt"></div>
+                        <div class="title-text">
+                            <p>Youtube</p>
+                        </div>
+                    </a>
+                    <a href="/form" class="opt-pdf" >
+                        <div class="icon-pdf"></div>
+                        <div class="title-text">
+                            <p>PDF</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

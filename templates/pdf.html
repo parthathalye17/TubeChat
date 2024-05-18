@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #1e1e1e;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* justify-content:last baseline; */
+            align-items: stretch;
+            height: 100vh;
+        }
+        .top{
+            height: 40vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            background-image: url("../assets/pdfbg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.45);
+        }
+        .app-name{
+            margin-left: 2vw;
+            margin-top: 4vh;
+        }
+        .app-name a{
+            color: #FFF;
+            font-family: "Do Hyeon";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+        .sub-btn{
+            border-radius: 4px 8px 8px 4px;
+            background: #1E1E1E;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+            border: none;
+            padding: 10px 14px;
+            margin-right: 0.7vw;
+            color: white;
+            
+        }
+        .chat-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 5vh;
+            /* align-self:; */
+        }
+        .chat{
+            width: 96vw;
+            height: 7vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.55);
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(4px);
+        }
+        .ques{
+            width: 90vw;
+            height: 5vh;
+            padding-left: 1.35vw;
+            /* padding-right: 1.35vw; */
+            background: none;
+            border: none;
+        }
+        .ques:focus{
+            outline: none;
+        }
+        .fileselectorframe{
+            display: flex;
+            padding: 8px 12px;
+            justify-content: center;
+            align-items: center;
+            /* gap: 10px; */
+            border-radius: 4px;
+            /* background: #9bc5ff; */
+            /* width: 15vw; */
+            margin-top: 2vh;
+            
+        }
+        .pdf-form{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            margin-top: 4vh;
+            margin-left: 3vw;
+        }
+        .file{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 90vw;
+            color: #FFF;
+        }
+        .sub-btn{
+            border-radius: 4px 8px 8px 4px;
+            background: #1E1E1E;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+            border: none;
+            padding: 10px 14px;
+            margin-right: 0.7vw;
+            color: white;
+        }
+        .op{
+            color: #c5bdbd;
+            margin-left: 2vw;
+            font-family:"inter";
+            font-size: 15px;
+            /* line-height: 18px; */
+        }
+        /* .inp{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } */
+        .learn{
+            padding: 10px 20px;
+            border-radius: 12px;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="app-name">
+                <a href="/">TubeChat</a>
+            </div>
+            <div class="pdf-form">
+                <form action="/get_pdf" class="file" method ='POST'>
+                    <label>Choose the PDF file to be analysed</label>
+                    <div class="inp">
+                        <input type="file" placeholder="Enter the PDF file here" class="fileselectorframe" name="file">
+                        <input type="submit" value="Learn" class="learn">
+                        
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
